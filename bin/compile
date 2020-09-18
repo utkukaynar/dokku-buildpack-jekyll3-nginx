@@ -63,6 +63,7 @@ if [ ! -f $BUILD_DIR/.gems/bin/jekyll ]; then
     if [ ! -f $BUILD_DIR/.gems/bin/bundle ]; then
       gem install bundler --no-rdoc --no-ri | indent
     fi
+    gem update --system
 fi
 
 # Set charset to avoid https://github.com/jekyll/jekyll/issues/4268
